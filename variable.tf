@@ -14,3 +14,9 @@ variable labels {
   type = map (any)
   default = {}
 }
+
+variable pod_limit {
+  description = "Please define pod limit"
+  type = string 
+  default = 100
+}
