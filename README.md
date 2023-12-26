@@ -5,8 +5,9 @@
 module "namespace" {
   source = "ViktoriyaXIII/namespace/kubernetes"
   name   = "test"
+  pod_limit = 1000
   labels = {
-    enviroment = "dev"
+    environment = "dev"
   }
   annotations = {
     managed_by = "terraform"
